@@ -1,0 +1,337 @@
+.body {
+    font-family: serif;
+}
+
+/* ファーストビュー */
+.header {
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background-image: url(images/mainvisual.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.title {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.onlinestore {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border: solid 1px white;
+}
+
+.onlinestore a {
+    padding: 5px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.header li {
+    list-style: none;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+/* メインコンテンツ */
+.main {
+    background-color: #E8E3DC;
+}
+
+/* #news */
+#news {
+    display: flex;
+    justify-content: right;
+    padding-right: 5%;
+}
+
+#news .newslist {
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    color: #343331;
+    padding-left: 140px;
+    padding: 10px 0;
+}
+
+#news .list dd {
+    border-right: solid 1px;
+    padding: 0 5px;
+}
+
+#news .list .pc {
+    display: none;
+}
+
+#news .list .last {
+    border-left: solid 1px;
+}
+
+/* #goods1 */
+
+#goods1 h2 {
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    color: #343331;
+    padding-left: 10px;
+}
+
+#goods1 img {
+    width: 273px;
+    height: 139px;
+    margin-top: 40px;
+}
+
+#goods1 .goods1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    position: relative;
+    padding: 35px 0;
+}
+
+#goods1 .text-layer {
+    width: 127px;
+    height: 66px;
+    background-color: #B5B52F;
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#goods1 .text-layer p {
+    color: white;
+}
+
+/* #goods2 */
+#goods2 h2 {
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    color: #343331;
+    padding-left: 10px;
+}
+
+#goods2 img {
+    width: 273px;
+    height: 139px;
+    margin-top: 40px;
+}
+
+#goods2 .goods2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 35px 0;
+}
+
+#goods2 .text-layer2 {
+    width: 127px;
+    height: 66px;
+    background-color: #B28565;
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#goods2 .text-layer2 p {
+    color: white;
+}
+
+/* #address */
+#address iframe {
+    width: 100%;
+}
+
+/* footer */
+.footer {
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    position: relative;
+    background-color: black;
+    color: white;
+}
+
+.footer-logo {
+    font-size: 30px;
+}
+
+.footer .title {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.footer .onlinestore {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border: solid 1px white;
+}
+
+.footer .onlinestore a {
+    padding: 5px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer li {
+    list-style: none;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+@media (min-width: 600px) {
+    /* header */
+    .header h1 {
+        font-size: 65px;
+    }
+
+    .header .title {
+        font-size: 20px;
+    }
+
+    .header .onlinestore {
+        font-size: 20px;
+    }
+
+    /* メインコンテンツ */
+    /* #news */
+
+    #news .newslist {
+        padding-top: 150px;
+        padding-bottom: 130px;
+    }
+
+    #news .newslist h2 {
+        font-size: 50px;
+    }
+
+    #news .newslist .list {
+        font-size: 30px;
+    }
+
+    #news .list dt {
+        padding: 0 20px;
+    }
+
+    /* #goods1 */
+    #goods1 img {
+        width: 50%;
+        height: auto;
+    }
+
+    #goods1 h2 {
+        font-size: 50px;
+    }
+
+    #goods1 .goods1 {
+        display: flex;
+        justify-content:right;
+        flex-direction: row-reverse;
+        position: relative;
+        padding-right: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    #goods1 .text-layer {
+        width: 360px;
+        height: 192px;
+        background-color: #B5B52F;
+        position: absolute;
+        left: 23%;
+        bottom: 5%;
+        opacity: 0.8;
+    }
+
+    #goods1 .text-layer p {
+        font-size: 30px;
+    }
+
+    /* #goods2 */
+    #goods2 img {
+        width: 50%;
+        height: auto;
+    }
+
+    #goods2 h2 {
+        font-size: 50px;
+    }
+
+    #goods2 .goods2 {
+        display: flex;
+        justify-content:left;
+        position: relative;
+        padding-left: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    #goods2 .text-layer2 {
+        width: 360px;
+        height: 192px;
+        background-color: #B28565;
+        position: absolute;
+        left: 47%;
+        bottom: 5%;
+        opacity: 0.8;
+    }
+
+    #goods2 .text-layer2 p {
+        font-size: 30px;
+    }
+
+    /* footer */
+    .footer-logo {
+        font-size: 65px;
+    }
+
+    .footer .title {
+        font-size: 20px;
+    }
+
+    .footer .onlinestore a {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:800px) {
+    /* #news */
+    #news .list .pc {
+        display: block;
+    }
+}
